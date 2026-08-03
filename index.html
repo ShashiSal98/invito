@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invito | Premium Digital Invitations</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#FAF6F0] text-stone-800 antialiased scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="javascript:void(0)" class="serif-font text-3xl font-bold tracking-wide text-amber-700">invito<span
+                    class="text-stone-400">.</span></a>
+            <div class="hidden md:flex items-center space-x-8 font-medium text-stone-600">
+                <a href="#features" class="hover:text-amber-700 transition">Features</a>
+                <a href="#templates" class="hover:text-amber-700 transition">Themes & Previews</a>
+                <a href="#pricing" class="hover:text-amber-700 transition">Pricing</a>
+                <a href="#contact" class="hover:text-amber-700 transition">Contact</a>
+            </div>
+            <a href="#templates"
+                class="bg-amber-700 hover:bg-amber-800 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition shadow-sm">Get
+                Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden py-20 lg:py-32 bg-gradient-to-b from-amber-50/50 to-[#FAF6F0]">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center lg:text-left">
+                <span
+                    class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full">Eco-Friendly
+                    & Elegant</span>
+                <h1 class="serif-font text-5xl lg:text-6xl font-bold leading-tight text-stone-900">
+                    Beautiful Digital Invitations For Your Special Day
+                </h1>
+                <p class="text-lg text-stone-600 max-w-xl mx-auto lg:mx-0">
+                    Share your joy effortlessly. Beautiful cultural, traditional, and modern digital invitation cards
+                    packed with interactive RSVP, live countdowns, and maps.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#templates"
+                        class="bg-amber-700 hover:bg-amber-800 text-white px-8 py-3.5 rounded-xl font-semibold shadow-md transition text-center">Browse
+                        Themes</a>
+                    <a href="#features"
+                        class="border border-stone-300 hover:bg-stone-100 px-8 py-3.5 rounded-xl font-semibold transition text-center">See
+                        Features</a>
+                </div>
+            </div>
+
+            <!-- Smartphone Showcase Window Column -->
+            <div class="flex flex-col items-center justify-center">
+                <span class="text-xs text-stone-500 font-medium mb-3 tracking-wide flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Live Device Simulation
+                </span>
+
+                <!-- Smartphone Wrapper Frame Container -->
+                <div
+                    class="relative w-[310px] h-[620px] bg-stone-950 rounded-[44px] p-3.5 shadow-2xl border-4 border-stone-800 ring-12 ring-stone-900/10">
+                    <!-- Dynamic Screen Viewport Area -->
+                    <div
+                        class="relative w-full h-full bg-stone-900 rounded-[32px] overflow-hidden border border-stone-800 flex flex-col justify-between">
+
+                        <!-- Phone Top Notch System Status Bar Layout -->
+                        <div
+                            class="w-full h-7 bg-stone-950 absolute top-0 left-0 z-30 px-6 flex items-center justify-between text-[10px] text-white/90">
+                            <span>9:41</span>
+                            <div
+                                class="w-20 h-4 bg-stone-950 rounded-b-xl absolute left-1/2 transform -translate-x-1/2 top-0">
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span>📶</span>
+                                <span>🔋</span>
+                            </div>
+                        </div>
+
+                        <!-- Device Frame Dynamic Card Slides Container Inside Screen Space -->
+                        <div id="heroMockupViewport"
+                            class="w-full h-full pt-7 flex flex-col justify-between relative bg-stone-50">
+                            <div class="w-full h-full bg-stone-50">
+                                <img src="./themes/western.png" alt="Western Wedding preview"
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hr class="border-stone-200 max-w-7xl mx-auto">
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <h2 class="serif-font text-4xl font-bold text-stone-900">Loaded with Premium Features</h2>
+            <p class="text-stone-600">Everything you need to manage your guest lists and guide them to your venue
+                effortlessly.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+                class="bg-white p-6 rounded-2xl border border-stone-100 shadow-xs space-y-4 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div
+                        class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 text-xl font-bold">
+                        🗓️</div>
+                    <h3 class="text-lg font-bold text-stone-900">All Events in One Place</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">Poruwa, Church, Reception, Homecoming - linked in
+                        one invitation with maps and timelines.</p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-6 rounded-2xl border border-stone-100 shadow-xs space-y-4 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div
+                        class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 text-xl font-bold">
+                        ⏱️</div>
+                    <h3 class="text-lg font-bold text-stone-900">Live Countdown</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">Build excitement with a beautiful countdown timer
+                        that updates in real-time.</p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-6 rounded-2xl border border-stone-100 shadow-xs space-y-4 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div
+                        class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 text-xl font-bold">
+                        📍</div>
+                    <h3 class="text-lg font-bold text-stone-900">Google Maps Directions</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">One tap from the invitation opens turn-by-turn
+                        directions for each venue.</p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-6 rounded-2xl border border-stone-100 shadow-xs space-y-4 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div
+                        class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 text-xl font-bold">
+                        💌</div>
+                    <h3 class="text-lg font-bold text-stone-900">Instant RSVP</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">Track food preferences, guest counts, and
+                        customized wishes instantly through our automated dashboard.</p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-6 rounded-2xl border border-stone-100 shadow-xs space-y-4 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div
+                        class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 text-xl font-bold">
+                        💰</div>
+                    <h3 class="text-lg font-bold text-stone-900">Save Money</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">No printing, no postage. Save up to 80% compared
+                        to traditional paper invitations.</p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-6 rounded-2xl border border-stone-100 shadow-xs space-y-4 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div
+                        class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 text-xl font-bold">
+                        🔗</div>
+                    <h3 class="text-lg font-bold text-stone-900">Easy Sharing</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">Share your invitation with a single link. Works
+                        perfectly on any device, no app required.</p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-6 rounded-2xl border border-stone-100 shadow-xs space-y-4 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div
+                        class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 text-xl font-bold">
+                        🌿</div>
+                    <h3 class="text-lg font-bold text-stone-900">Eco-Friendly</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">Go green with zero paper waste. Celebrate
+                        sustainably with digital invitations.</p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-6 rounded-2xl border border-stone-100 shadow-xs space-y-4 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div
+                        class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 text-xl font-bold">
+                        📸</div>
+                    <h3 class="text-lg font-bold text-stone-900">Gallery & Story</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">Share engagement photos and how you met - give
+                        guests a personal feel for your big day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Themes and Device Preview Studio -->
+    <section id="templates" class="py-24 bg-[#FAF6F0] border-t border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-amber-700 font-bold tracking-widest text-xs uppercase block">Live Preview
+                    Studio</span>
+                <h2 class="serif-font text-4xl font-bold text-stone-900">Select a Theme & Preview Designs</h2>
+                <p class="text-stone-600">Click "Preview Theme" below to view the design on the live smartphone
+                    simulator or view its full live demo website.</p>
+            </div>
+
+            <!-- Balanced Center Layout Panel -->
+            <div class="space-y-8 flex flex-col items-center">
+                <!-- Filter Tabs -->
+                <div
+                    class="flex flex-wrap gap-2 bg-white p-2 rounded-xl border border-stone-200 shadow-xs inline-block mx-auto">
+                    <button onclick="filterCategories('all', this)"
+                        class="cat-btn active px-4 py-2 text-xs font-semibold uppercase rounded-lg bg-amber-700 text-white transition cursor-pointer">Show
+                        All</button>
+                    <button onclick="filterCategories('wedding', this)"
+                        class="cat-btn px-4 py-2 text-xs font-semibold uppercase rounded-lg text-stone-600 hover:text-stone-900 transition cursor-pointer">Wedding
+                        Themes</button>
+                    <button onclick="filterCategories('events', this)"
+                        class="cat-btn px-4 py-2 text-xs font-semibold uppercase rounded-lg text-stone-600 hover:text-stone-900 transition cursor-pointer">Parties
+                        & Corporate</button>
+                </div>
+
+                <!-- Balanced Grid Layout -->
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 w-full justify-center">
+
+                    <!-- Kandyan Wedding Card -->
+                    <div id="card-kandyan" onclick="selectTheme('kandyan', this)"
+                        class="theme-card bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-amber-700 transition cursor-pointer flex flex-col justify-between group active-theme"
+                        data-cat="wedding">
+                        <div>
+                            <div class="h-44 bg-stone-100 overflow-hidden relative">
+                                <img src="./themes/kandyan.png" alt="Kandyan Wedding"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-3 left-3 bg-black/40 text-white text-[9px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-md backdrop-blur-xs">
+                                    Traditional</div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h3 class="serif-font text-xl font-bold text-stone-900">Kandyan Wedding</h3>
+                                <p class="text-stone-600 text-xs leading-relaxed">Traditional Sri Lankan elegance with
+                                    rich cultural symbolism, intricate golden trim, and heritage accents.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0"><a href="https://shashisal98.github.io/kandyan/" target="_blank"
+                                onclick="event.stopPropagation();" class="block w-full">
+                                <button
+                                    class="w-full bg-[#FAF6F0] border border-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl group-hover:bg-amber-700 group-hover:text-white transition cursor-pointer">Preview
+                                    Theme</button> </a>
+                        </div>
+                    </div>
+
+                    <!-- Western Wedding Card -->
+                    <div id="card-western" onclick="selectTheme('western', this)"
+                        class="theme-card bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-transparent hover:border-amber-700/50 transition cursor-pointer flex flex-col justify-between group"
+                        data-cat="wedding">
+                        <div>
+                            <div class="h-44 bg-stone-100 overflow-hidden relative">
+                                <img src="./themes/western.png" alt="Western Wedding"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-3 left-3 bg-black/40 text-white text-[9px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-md backdrop-blur-xs">
+                                    Modern</div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h3 class="serif-font text-xl font-bold text-stone-900">Western Wedding</h3>
+                                <p class="text-stone-600 text-xs leading-relaxed">Garden romance and modern Western
+                                    styling featuring premium serif layouts and floral patterns.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <a href="https://shashisal98.github.io/shashi-thimira//?name=Mr.%20Perera" target="_blank"
+                                onclick="event.stopPropagation();" class="block w-full">
+                                <button type="button"
+                                    class="w-full bg-[#FAF6F0] border border-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl group-hover:bg-amber-700 group-hover:text-white transition cursor-pointer">Preview
+                                    Theme</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Golden Promise Card -->
+                    <div id="card-promise" onclick="selectTheme('promise', this)"
+                        class="theme-card bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-transparent hover:border-amber-700/50 transition cursor-pointer flex flex-col justify-between group"
+                        data-cat="wedding">
+                        <div>
+                            <div class="h-44 bg-stone-100 overflow-hidden relative">
+                                <img src="./themes/golden-promise.png" alt="Golden Promise"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-3 left-3 bg-black/40 text-white text-[9px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-md backdrop-blur-xs">
+                                    Luxury</div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h3 class="serif-font text-xl font-bold text-stone-900">Golden Promise</h3>
+                                <p class="text-stone-600 text-xs leading-relaxed">Cinematic opening with warm sand and
+                                    gold garden romance layered beautifully with cursive calligraphy.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <a href="https://shashisal98.github.io/golden-ashi-senuth/" target="_blank"
+                                onclick="event.stopPropagation();" class="block w-full">
+                                <button
+                                    class="w-full bg-[#FAF6F0] border border-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl group-hover:bg-amber-700 group-hover:text-white transition cursor-pointer">Preview
+                                    Theme</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tamil Wedding Card -->
+                    <div id="card-tamil" onclick="selectTheme('tamil', this)"
+                        class="theme-card bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-transparent hover:border-amber-700/50 transition cursor-pointer flex flex-col justify-between group"
+                        data-cat="wedding">
+                        <div>
+                            <div class="h-44 bg-stone-100 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=600"
+                                    alt="Tamil Wedding"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-3 left-3 bg-black/40 text-white text-[9px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-md backdrop-blur-xs">
+                                    Vibrant</div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h3 class="serif-font text-xl font-bold text-stone-900">Tamil Wedding</h3>
+                                <p class="text-stone-600 text-xs leading-relaxed">Vibrant red backdrops embedded with
+                                    detailed sacred mandap lines and ornate traditional borders.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button
+                                class="w-full bg-[#FAF6F0] border border-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl group-hover:bg-amber-700 group-hover:text-white transition cursor-pointer">Preview
+                                Theme</button>
+                        </div>
+                    </div>
+
+                    <!-- Business Opening Card -->
+                    <div id="card-business" onclick="selectTheme('business', this)"
+                        class="theme-card bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-transparent hover:border-amber-700/50 transition cursor-pointer flex flex-col justify-between group"
+                        data-cat="events">
+                        <div>
+                            <div class="h-44 bg-stone-100 overflow-hidden relative">
+                                <img src="./themes/opening.png" alt="Business Opening"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-3 left-3 bg-black/40 text-white text-[9px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-md backdrop-blur-xs">
+                                    Corporate</div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h3 class="serif-font text-xl font-bold text-stone-900">Business Opening</h3>
+                                <p class="text-stone-600 text-xs leading-relaxed">Sophisticated, clean layouts
+                                    engineered with bold fonts, professional schedules, and interactive coordinates.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <a href="https://shashisal98.github.io/opening/" target="_blank"
+                                onclick="event.stopPropagation();" class="block w-full">
+                                <button
+                                    class="w-full bg-[#FAF6F0] border border-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl group-hover:bg-amber-700 group-hover:text-white transition cursor-pointer">Preview
+                                    Theme</button></a>
+                        </div>
+                    </div>
+
+                    <!-- Birthday Party Card -->
+                    <div id="card-birthday" onclick="selectTheme('birthday', this)"
+                        class="theme-card bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-transparent hover:border-amber-700/50 transition cursor-pointer flex flex-col justify-between group"
+                        data-cat="events">
+                        <div>
+                            <div class="h-44 bg-stone-100 overflow-hidden relative">
+                                <img src="./themes/birthday.png" alt="Birthday Party"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-3 left-3 bg-black/40 text-white text-[9px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-md backdrop-blur-xs">
+                                    Fun</div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h3 class="serif-font text-xl font-bold text-stone-900">Birthday Party</h3>
+                                <p class="text-stone-600 text-xs leading-relaxed">Cheerful, sleek festive styling
+                                    emphasizing interactive response logs and fun imagery grids.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <a href="https://shashisal98.github.io/birthday/" target="_blank"
+                                onclick="event.stopPropagation();" class="block w-full">
+                                <button
+                                    class="w-full bg-[#FAF6F0] border border-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl group-hover:bg-amber-700 group-hover:text-white transition cursor-pointer">Preview
+                                    Theme</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="serif-font text-4xl font-bold">Transparent, Simple Pricing</h2>
+                <p class="text-stone-400">One-time payments. No recurring monthly subscriptions or hidden renewal fees.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                <!-- Basic -->
+                <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-stone-300">Basic</h4>
+                        <div class="mt-4 flex items-baseline">
+                            <span class="text-4xl font-bold tracking-tight">LKR 2,500</span>
+                            <span class="ml-1 text-sm text-stone-400">/one-time</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-sm text-stone-300">
+                        <li>✓ 1 Standard Theme Choice</li>
+                        <li>✓ Live Countdown Timer</li>
+                        <li>✓ Basic WhatsApp Share Link</li>
+                        <li class="text-stone-500 line-through">✗ Custom Map Integration</li>
+                        <li class="text-stone-500 line-through">✗ Advanced RSVP Dashboard</li>
+                    </ul>
+                    <a href="#contact"
+                        class="block text-center w-full border border-stone-600 hover:bg-stone-700 py-3 rounded-xl font-medium transition text-sm">Choose
+                        Basic</a>
+                </div>
+
+                <!-- Standard -->
+                <div
+                    class="bg-stone-800 p-8 rounded-2xl border-2 border-amber-600 space-y-6 relative transform lg:-translate-y-4 shadow-xl">
+                    <span
+                        class="absolute top-0 right-6 transform -translate-y-1/2 bg-amber-600 text-white text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full">Most
+                        Popular</span>
+                    <div>
+                        <h4 class="text-lg font-semibold text-stone-300">Standard</h4>
+                        <div class="mt-4 flex items-baseline">
+                            <span class="text-4xl font-bold tracking-tight">LKR 5,000</span>
+                            <span class="ml-1 text-sm text-stone-400">/one-time</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-sm text-stone-300">
+                        <li>✓ Access to All Cultural/Modern Themes</li>
+                        <li>✓ Live Countdown Timer</li>
+                        <li>✓ Google Maps Location Integration</li>
+                        <li>✓ Standard Interactive RSVP</li>
+                        <li class="text-stone-500 line-through">✗ Background Music Track</li>
+                    </ul>
+                    <a href="#contact"
+                        class="block text-center w-full bg-amber-700 hover:bg-amber-800 text-white py-3 rounded-xl font-medium transition text-sm shadow-md">Choose
+                        Standard</a>
+                </div>
+
+                <!-- Premium -->
+                <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-stone-300">Premium</h4>
+                        <div class="mt-4 flex items-baseline">
+                            <span class="text-4xl font-bold tracking-tight">LKR 10,000</span>
+                            <span class="ml-1 text-sm text-stone-400">/one-time</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-sm text-stone-300">
+                        <li>✓ Fully Custom-Tailored Design Theme</li>
+                        <li>✓ Live Countdown & Event Timeline</li>
+                        <li>✓ Live Maps + Multi-Location Pins</li>
+                        <li>✓ Premium RSVP + Instant SMS Notifications</li>
+                        <li>✓ Custom Background Music Loop</li>
+                    </ul>
+                    <a href="#contact"
+                        class="block text-center w-full border border-stone-600 hover:bg-stone-700 py-3 rounded-xl font-medium transition text-sm">Choose
+                        Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6 text-center space-y-8">
+        <div class="space-y-3">
+            <h2 class="serif-font text-4xl font-bold text-stone-900">Let's Create Your Invitation</h2>
+            <p class="text-stone-600 max-w-md mx-auto">Have questions about specific feature sets, customizations, or
+                bulk designs? Reach out immediately.</p>
+        </div>
+        <div class="inline-flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-md">
+            <input type="email" placeholder="Enter your email address"
+                class="w-full px-4 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:border-amber-700 text-sm">
+            <button
+                class="w-full sm:w-auto shrink-0 bg-stone-900 hover:bg-stone-800 text-white px-6 py-3.5 rounded-xl font-medium transition text-sm cursor-pointer">Get
+                Free Consultation</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-50 border-t border-stone-200 py-8 text-center text-xs text-stone-500">
+        <p>&copy; 2026 Invito Inc. Inspired by digital custom crafting formats.</p>
+    </footer>
+
+    <!-- Interactive RSVP Modal Component -->
+    <div id="rsvpModal"
+        class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-6 space-y-4 relative">
+            <button onclick="closeRSVP()"
+                class="absolute top-4 right-4 text-stone-400 hover:text-stone-700 font-bold text-xl cursor-pointer">&times;</button>
+            <h3 class="serif-font text-xl font-bold text-stone-900">Confirm Attendance</h3>
+            <form onsubmit="submitRSVP(event)" class="space-y-3">
+                <div>
+                    <label class="block text-xs font-medium text-stone-500 mb-1">Your Full Name</label>
+                    <input type="text" required
+                        class="w-full px-3 py-2 border border-stone-200 rounded-lg text-sm focus:outline-none focus:border-amber-700">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-stone-500 mb-1">Are you attending?</label>
+                    <select
+                        class="w-full px-3 py-2 border border-stone-200 rounded-lg text-sm focus:outline-none focus:border-amber-700">
+                        <option>Yes, gladly attending</option>
+                        <option>Regretfully declining</option>
+                    </select>
+                </div>
+                <button type="submit"
+                    class="w-full bg-amber-700 hover:bg-amber-800 text-white py-2.5 rounded-lg font-medium transition text-sm mt-2 cursor-pointer">Submit
+                    RSVP Response</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripting Components -->
+    <script>
+        // High Fidelity Database structure
+        const sampleDatabase = {
+            kandyan: {
+                themeName: "Kandyan Wedding",
+                demoUrl: "https://www.zenvite.online/#themes",
+                samples: [
+                    { title: "Royal Crimson Nilame", accent: "bg-red-950 text-amber-200 border-amber-600", desc: "Traditional Kandyan gold embroidery, intricate border patterns, and royal dark crimson styling." }
+                ]
+            },
+            western: {
+                themeName: "Western Wedding",
+                // FIXED URL HERE WITH TARGETED PARAMETERS:
+                demoUrl: "https://shashisal98.github.io/shashi-thimira/?name=Mr.%20Kavi",
+                samples: [
+                    { title: "Ethereal White Rose", accent: "bg-white text-stone-900 border-stone-200", desc: "Clean modern serif layouts accompanied by graceful white floral patterns." }
+                ]
+            },
+            promise: {
+                themeName: "Golden Promise",
+                demoUrl: "https://www.zenvite.online/#themes",
+                samples: [
+                    { title: "Champagne Script Timeless", accent: "bg-amber-50 text-stone-800 border-amber-300", desc: "Delicate champagne tones layered beautifully with traditional sweeping calligraphy fonts." }
+                ]
+            },
+            tamil: {
+                themeName: "Tamil Wedding",
+                demoUrl: "https://www.zenvite.online/#themes",
+                samples: [
+                    { title: "Festive Mandap Maroon", accent: "bg-red-800 text-amber-200 border-yellow-500", desc: "Bright traditional look using sacred temple borders, gold motifs, and auspicious patterns." }
+                ]
+            },
+            business: {
+                themeName: "Business Opening",
+                demoUrl: "https://www.zenvite.online/#themes",
+                samples: [
+                    { title: "Corporate Launch Modern", accent: "bg-slate-900 text-white border-blue-500", desc: "A bold minimalist frame incorporating digital schedules, clear venue details, and modern business vibes." }
+                ]
+            },
+            birthday: {
+                themeName: "Birthday Party",
+                demoUrl: "https://www.zenvite.online/#themes",
+                samples: [
+                    { title: "Neon Glow Celebration", accent: "bg-purple-950 text-fuchsia-300 border-fuchsia-500", desc: "Fun, vibrant color pallets featuring dedicated schedule panels and response logs." }
+                ]
+            }
+        };
+
+        // State Trackers
+        let activeThemeKey = "kandyan";
+        let activeSampleIndex = 0;
+
+        // Top Category Tab Filter Integration
+        function filterCategories(category, currentBtn) {
+            const buttons = document.querySelectorAll('.cat-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-amber-700', 'text-white');
+                btn.classList.add('text-stone-600');
+            });
+            currentBtn.classList.remove('text-stone-600');
+            currentBtn.classList.add('bg-amber-700', 'text-white');
+
+            const cards = document.querySelectorAll('.theme-card');
+            let firstVisibleCard = null;
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-cat') === category) {
+                    card.style.display = 'flex';
+                    if (!firstVisibleCard) firstVisibleCard = card;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (firstVisibleCard) {
+                firstVisibleCard.click();
+            }
+        }
+
+        // Selected Theme Action Handler
+        function selectTheme(themeKey, cardElement) {
+            const cards = document.querySelectorAll('.theme-card');
+            cards.forEach(card => {
+                card.classList.remove('border-amber-700', 'active-theme');
+                card.classList.add('border-transparent');
+            });
+            cardElement.classList.remove('border-transparent');
+            cardElement.classList.add('border-amber-700', 'active-theme');
+
+            activeThemeKey = themeKey;
+            activeSampleIndex = 0;
+
+            renderMockupViews();
+        }
+
+        // Helper inner component generator (Standard anchor link rendered here)
+        function generateMockupHtml(themeData, sampleData) {
+            return `
+                <!-- Inside Top Title Bar -->
+                <div class="px-4 pt-4 pb-2 border-b border-stone-200 bg-white shadow-xs text-left">
+                    <p class="text-[9px] uppercase tracking-wider text-amber-700 font-extrabold">Theme Preview</p>
+                    <h4 class="text-xs font-bold text-stone-900 truncate">${themeData.themeName}</h4>
+                </div>
+
+                <!-- Live Dynamic Invitation Content Card Body Space -->
+                <div class="flex-1 p-3 flex flex-col justify-center items-center">
+                    <div class="w-full border-2 rounded-2xl p-4 shadow-sm flex flex-col justify-between h-80 transition-all duration-300 ${sampleData.accent}">
+                        
+                        <div class="space-y-1.5 text-center">
+                            <span class="text-[7px] tracking-widest uppercase block opacity-80">You Are Invited</span>
+                            <div class="w-4 h-[1px] bg-current mx-auto my-1 opacity-50"></div>
+                            <h5 class="serif-font text-base font-bold leading-tight px-1">${sampleData.title}</h5>
+                            <p class="text-[8px] opacity-70">Save The Date Announcement</p>
+                        </div>
+
+                        <p class="text-[9px] text-center font-medium leading-relaxed my-2 opacity-90 italic">
+                            "${sampleData.desc}"
+                        </p>
+
+                        <!-- Standard HTML <a> Tag to Navigate directly -->
+                        <div class="space-y-1 text-center">
+                            <a href="${themeData.demoUrl}" target="_blank" class="block text-[8px] font-bold tracking-wider uppercase bg-current/15 hover:bg-current/25 py-2 px-3 rounded-md transition text-center cursor-pointer">
+                                🔗 Live Preview Website
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Bottom Footer Info -->
+                <div class="p-3 border-t border-stone-200 bg-white text-center">
+                    <span class="text-[9px] text-stone-400 font-bold uppercase block">Interactive Viewport</span>
+                </div>
+            `;
+        }
+
+        // Live Mockup Screen Renderer Engine
+        function renderMockupViews() {
+            const themeData = sampleDatabase[activeThemeKey];
+            const sampleData = themeData.samples[activeSampleIndex];
+            const htmlContent = generateMockupHtml(themeData, sampleData);
+
+            // Render Hero Simulator with a fixed image preview
+            const heroViewport = document.getElementById("heroMockupViewport");
+            if (heroViewport) {
+                heroViewport.innerHTML = `
+                    <div class="w-full h-full bg-stone-50">
+                        <img src="./themes/western.png" alt="Western Wedding preview"
+                            class="w-full h-full object-cover">
+                    </div>
+                `;
+            }
+
+            // Render Preview Studio Simulator
+            const studioViewport = document.getElementById("mockupViewport");
+            if (studioViewport) studioViewport.innerHTML = htmlContent;
+
+            // Update external links if present
+            if (document.getElementById("liveDemoLink")) {
+                document.getElementById("liveDemoLink").setAttribute("href", themeData.demoUrl);
+            }
+            if (document.getElementById("heroLiveDemoLink")) {
+                document.getElementById("heroLiveDemoLink").setAttribute("href", themeData.demoUrl);
+            }
+        }
+
+        function confirmSelectedDesign() {
+            const themeName = sampleDatabase[activeThemeKey].themeName;
+            alert(`Excellent Choice!\nYou selected the "${themeName}" track.`);
+        }
+
+        function closeRSVP() {
+            document.getElementById('rsvpModal').classList.add('hidden');
+        }
+
+        function submitRSVP(event) {
+            event.preventDefault();
+            alert('Thank you for your response!');
+            closeRSVP();
+        }
+
+        // Initialize First View Content state on page mount
+        renderMockupViews();
+    </script>
+</body>
+
+</html>
