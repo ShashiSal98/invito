@@ -322,6 +322,33 @@
                         </div>
                     </div>
 
+                        <!-- Scratch Card -->
+                    <div id="card-scratch" onclick="selectTheme('scratch', this)"
+                        class="theme-card bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-transparent hover:border-amber-700/50 transition cursor-pointer flex flex-col justify-between group"
+                        data-cat="wedding">
+                        <div>
+                            <div class="h-44 bg-stone-100 overflow-hidden relative">
+                                <img src="./themes/scratch.png" alt="Scratch"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-3 left-3 bg-black/40 text-white text-[9px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-md backdrop-blur-xs">
+                                    Luxury</div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h3 class="serif-font text-xl font-bold text-stone-900">Cinematic Gold</h3>
+                                <p class="text-stone-600 text-xs leading-relaxed">A luxe scratch-to-reveal invitation with cinematic flair.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <a href="https://shashisal98.github.io/cinematic-gold/" target="_blank"
+                                onclick="event.stopPropagation();" class="block w-full">
+                                <button
+                                    class="w-full bg-[#FAF6F0] border border-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl group-hover:bg-amber-700 group-hover:text-white transition cursor-pointer">Preview
+                                    Theme</button>
+                            </a>
+                        </div>
+                    </div>
+
                     <!-- Tamil Wedding Card -->
                     <div id="card-tamil" onclick="selectTheme('tamil', this)"
                         class="theme-card bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-transparent hover:border-amber-700/50 transition cursor-pointer flex flex-col justify-between group"
@@ -560,6 +587,13 @@
                 demoUrl: "https://www.zenvite.online/#themes",
                 samples: [
                     { title: "Champagne Script Timeless", accent: "bg-amber-50 text-stone-800 border-amber-300", desc: "Delicate champagne tones layered beautifully with traditional sweeping calligraphy fonts." }
+                ]
+            },
+            scratch: {
+                themeName: "Scratch",
+                demoUrl: "https://shashisal98.github.io/cinematic-gold/",
+                samples: [
+                    { title: "Luxe Scratch Reveal", accent: "bg-purple-950 text-fuchsia-300 border-fuchsia-500", desc: "A luxe scratch-to-reveal invitation with cinematic flair." }
                 ]
             },
             tamil: {
