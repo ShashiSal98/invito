@@ -19,7 +19,7 @@
         }
 
         .serif-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
     </style>
 </head>
@@ -216,7 +216,7 @@
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-amber-700 font-bold tracking-widest text-xs uppercase block">Live Preview
                     Studio</span>
-                <h2 class="serif-font text-4xl font-bold text-stone-900">Select a Theme & Preview Designs</h2>
+                <h2 class="font-sans text-4xl font-bold text-stone-900">Select a Theme & Preview Designs</h2>
                 <p class="text-stone-600">Click "Preview Theme" below to view the design on the live smartphone
                     simulator or view its full live demo website.</p>
             </div>
@@ -322,7 +322,7 @@
                         </div>
                     </div>
 
-                        <!-- Scratch Card -->
+                    <!-- Scratch Card -->
                     <div id="card-scratch" onclick="selectTheme('scratch', this)"
                         class="theme-card bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-transparent hover:border-amber-700/50 transition cursor-pointer flex flex-col justify-between group"
                         data-cat="wedding">
@@ -336,7 +336,8 @@
                             </div>
                             <div class="p-5 space-y-2">
                                 <h3 class="serif-font text-xl font-bold text-stone-900">Cinematic Gold</h3>
-                                <p class="text-stone-600 text-xs leading-relaxed">A luxe scratch-to-reveal invitation with cinematic flair.</p>
+                                <p class="text-stone-600 text-xs leading-relaxed">A luxe scratch-to-reveal invitation
+                                    with cinematic flair.</p>
                             </div>
                         </div>
                         <div class="p-5 pt-0">
@@ -355,8 +356,7 @@
                         data-cat="wedding">
                         <div>
                             <div class="h-44 bg-stone-100 overflow-hidden relative">
-                                <img src="./themes/tamil.png"
-                                    alt="Tamil Wedding"
+                                <img src="./themes/tamil.png" alt="Tamil Wedding"
                                     class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                                 <div
                                     class="absolute top-3 left-3 bg-black/40 text-white text-[9px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-md backdrop-blur-xs">
@@ -371,9 +371,9 @@
                         <div class="p-5 pt-0">
                             <a href="https://shashisal98.github.io/tamil-wedding/" target="_blank"
                                 onclick="event.stopPropagation();" class="block w-full">
-                            <button
-                                class="w-full bg-[#FAF6F0] border border-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl group-hover:bg-amber-700 group-hover:text-white transition cursor-pointer">Preview
-                                Theme</button></a>
+                                <button
+                                    class="w-full bg-[#FAF6F0] border border-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl group-hover:bg-amber-700 group-hover:text-white transition cursor-pointer">Preview
+                                    Theme</button></a>
                         </div>
                     </div>
 
@@ -521,20 +521,26 @@
         <div class="space-y-3">
             <h2 class="serif-font text-4xl font-bold text-stone-900">Let's Create Your Invitation</h2>
             <p class="text-stone-600 max-w-md mx-auto">Have questions about specific feature sets, customizations, or
-                bulk designs? Reach out immediately.</p>
+                bulk designs? </br>Reach out immediately.</p>
         </div>
         <div class="inline-flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-md">
-            <input type="email" placeholder="Enter your email address"
-                class="w-full px-4 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:border-amber-700 text-sm">
-            <button
-                class="w-full sm:w-auto shrink-0 bg-stone-900 hover:bg-stone-800 text-white px-6 py-3.5 rounded-xl font-medium transition text-sm cursor-pointer">Get
-                Free Consultation</button>
+            <!-- <input type="email" placeholder="Enter your email address"
+                class="w-full px-4 py-3.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:border-amber-700 text-sm"> -->
+            <a href="https://wa.me/94778399189?text=Hello%20Invito%2C%20I%20would%20like%20to%20know%20more%20about%20your%20digital%20invitations."
+                target="_blank" rel="noopener noreferrer"
+                class="w-full sm:w-auto shrink-0 inline-flex items-center justify-center bg-amber-700 hover:bg-amber-800 text-white px-6 py-3.5 rounded-xl font-medium transition text-sm cursor-pointer">Contact
+                Us</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-stone-50 border-t border-stone-200 py-8 text-center text-xs text-stone-500">
-        <p>&copy; 2026 Invito Inc. Inspired by digital custom crafting formats.</p>
+        <p>&copy; 2026 Invito by <a href="https://www.stechsolution.lk/" target="_blank" rel="noopener noreferrer"
+                className="hover:text-white/40 transition-colors">
+                STech Solution
+            </a>
+        </p>
+        </p>
     </footer>
 
     <!-- Interactive RSVP Modal Component -->
